@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /**overflow: -moz-scrollbars-vertical;  **/
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+
+/**************************************************** PAGE HEADER **********************************************************/
+header {
+    text-align: center;
+    color: white;
+    background: rgb(200,54,0);
+    background: -moz-linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
+    background: linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c83600",endColorstr="#ff8153",GradientType=1);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+header h3 {
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+
+/************************************************** NAVIGATION BAR *********************************************************/
+nav {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    background: rgb(215,100,0);
+    background: -moz-linear-gradient(0deg, rgba(215,100,0,1) 0%, rgba(255,165,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(215,100,0,1) 0%, rgba(255,165,0,1) 100%);
+    background: linear-gradient(0deg, rgba(215,100,0,1) 0%, rgba(255,165,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d76400",endColorstr="#ffa500",GradientType=1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+nav>ul>li>ul {
+    position: relative;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    text-align: left;
+    z-index: 1;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+nav>ul>li>ul>li {
+    display: block;
+    margin: 0px;
+}
+
+nav>ul>li>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+nav ul li.active>a {
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:active,
+nav ul li a:visited {
+    color: white;
+}
+
+
+/**************************************************** PAGE FOOTER ***********************************************************/
+footer {
+    text-align: center;
+    color: white;
+    background: rgb(41,41,41);
+    background: -moz-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#808080",GradientType=1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer a:hover,
+footer a:active {
+    color: orangered;
+}
+
+
+/************************************************** MAIN CONTAINER *********************************************************/
+main {
+    text-align: center;
+    padding: 0px;
+    margin: 0px 0px 87px 0px;
+}
+
+
+/************************************************** CONTENT PANELS *********************************************************/
+.MainPanel {
+    width: 58%;
+    height: calc(100vh - 209px);
+    padding: 20px;
+    margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.MainPanel ul li {
+    padding: 10px 0px;
+}
+
+.SidePanel {
+    width: 35%;
+    min-height: calc(100vh - 209px);
+    padding: 20px;
+    margin: 0px;
+    background-color: #e6e6e6;
+    vertical-align: top;
+    float: left;
+    text-align: left;
+}
+
+.SidePanel h1 {
+    text-align: center;
+}
+
+.SidePanel ul li {
+    padding: 10px 0px;
+}
+
+
+/**************************************************** TEAM LIST ************************************************************/
+.TeamList {
+    padding: 0px;
+    margin: 10px 20px 0px 20px;
+    max-width: 100%;
+    color: #333;
+}
+
+.TeamList .TeamMember {
+    padding: 0px;
+    margin: 12px 10px;
+    width: 210px;
+    min-height: 625px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.TeamList .MemberImg {
+    position: relative;
+    width: 210px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.TeamList .MemberImg img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            
+}
+
+.TeamList .MemberName {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+
+.TeamList .MemberTitle {
+    padding: 0px 10px;
+    padding-top: 5px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.TeamList .MemberBio {
+    text-align: left;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+
+.TeamList .MemberBio p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+
+/************************************************** REFERENCE LIST *********************************************************/
+ul.RefList {
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    list-style-type: none;
+    text-indent: -40px;
+}
+
+ul.RefList li {
+    padding: 10px 0px;
+}
+
+/** Code for the mockups I put on the index page **/
+#mockuptable {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mockuptable .firstrow {
+    text-align: center;
+}
+
+#mockuptable .firstrow img {
+    width: 85%;
+}
+
+#mockuptable .secondrow {
+    text-align: center;
+    width: 33%;
+}
+
+#heroimagecontainer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#heroimagecontainer img {
+    width: 75%;
+}

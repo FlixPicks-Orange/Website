@@ -1,2 +1,2 @@
-# FlixPicks
-[Project Home Page](https://www.cs.odu.edu/~411orangeindex.html)
+# FlixPix - CS410 Fall 2023 Team Orange
+Repository for the FlixPicks website.
