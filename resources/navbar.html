@@ -1,56 +1,57 @@
 <nav>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./problem.html">Problem</a></li>
-      <li><a href="./solution.html">Solution</a></li>
-      <li><a href="./team.html">Team Members</a></li>
-      <li><a href="#">Deliverables</a>
-        <ul>
-          <li><a href="./current_process_flow.html">Current Process Flow</a></li>
-          <li><a href="./solution_process_flow.html">Solution Process Flow</a></li>
-          <li><a href="./mfcd.html">MFCD</a></li>
-          <li><a href="./competition.html">Competition Matrix</a></li>
-          <li><a href="./risk_matrix.html">Risk Matrix</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Presentations</a>
-        <ul>
-          <li><a href="./idea_presentation.html">Idea Presentation</a></li>
-          <li><a href="./feasibility_presentation.html">Feasibility Presentation</a></li>
-          <li><a href="./feasibility_presentation2.html">Feasibility Presentation 2</a></li>
-          <li><a href="./design_presentation.html">Design Presentation</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Labs</a>
-        <ul>
-          <li><a href="./lab1outline.html">Lab 1 Outline</a></li>
-        </ul>
-      </li>
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./problem.html">Problem</a></li>
+    <li><a href="./solution.html">Solution</a></li>
+    <li><a href="./team.html">Team Members</a></li>
+    <li><a href="#">Deliverables</a>
+      <ul>
+        <li><a href="./current_process_flow.html">Current Process Flow</a></li>
+        <li><a href="./solution_process_flow.html">Solution Process Flow</a></li>
+        <li><a href="./mfcd.html">MFCD</a></li>
+        <li><a href="./competition.html">Competition Matrix</a></li>
+        <li><a href="./risk_matrix.html">Risk Matrix</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Presentations</a>
+      <ul>
+        <li><a href="./idea_presentation.html">Idea Presentation</a></li>
+        <li><a href="./feasibility_presentation.html">Feasibility Presentation</a></li>
+        <li><a href="./feasibility_presentation2.html">Feasibility Presentation 2</a></li>
+        <li><a href="./design_presentation.html">Design Presentation</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Labs</a>
+      <ul>
+        <li><a href="./lab1outline.html">CS410 Lab 1 Outline</a></li>
+        <li><a href="./lab1outline411.html">CS411 Lab 1 Outline</a></li>
+      </ul>
+    </li>
 
-      <li><a href="./userstories.html">User Stories</a></li>
-      <li><a href="./glossary.html">Glossary</a></li>
-      <li><a href="./references.html">References</a></li>
-    </ul>
+    <li><a href="./userstories.html">User Stories</a></li>
+    <li><a href="./glossary.html">Glossary</a></li>
+    <li><a href="./references.html">References</a></li>
+  </ul>
 </nav>
 
 <script>
-$(document).ready(function() {
-  // Get current page name
-  var currentURL = window.location.href;
-  var pageName = currentURL.substr(currentURL.lastIndexOf('/') + 1);
-  console.log("page name: "+pageName);
-  // Check if Page Name Exists (will be blank on first access to site)
-  if(pageName!="") {
+  $(document).ready(function() {
+    // Get current page name
+    var currentURL = window.location.href;
+    var pageName = currentURL.substr(currentURL.lastIndexOf('/') + 1);
+    console.log("page name: "+pageName);
+    // Check if Page Name Exists (will be blank on first access to site)
+    if(pageName!="") {
       // Inspect all <a> tags in the navigation menu
       $("nav ul li a").each(function() {
-      // Get target page name from href attribute
-      var targetPage = $(this).attr('href').substr($(this).attr('href').lastIndexOf('/') + 1);
-      // Check if target page name matches the current page name
-      if (targetPage === pageName) {
-        // Add the 'active' class to the top level parent <li> tag
-        $(this).parents('li').last().addClass('active');
-      }
-    });
-  } else $("nav ul li").first().addClass('active'); // Make first tab (i.e. Home) active
-});
+        // Get target page name from href attribute
+        var targetPage = $(this).attr('href').substr($(this).attr('href').lastIndexOf('/') + 1);
+        // Check if target page name matches the current page name
+        if (targetPage === pageName) {
+          // Add the 'active' class to the top level parent <li> tag
+          $(this).parents('li').last().addClass('active');
+        }
+      });
+    } else $("nav ul li").first().addClass('active'); // Make first tab (i.e. Home) active
+  });
 </script>
