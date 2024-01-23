@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS411 Orange: Flixpicks</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <link rel="stylesheet" type="text/css" href="./css/mystylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./resources/pageLayout.js"></script>
+  <style>
+    /* I have removed this code related to a table because I couldn't get it to be nice. However, I have it in in case of future use. -Roxy
+    table {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    td {
+      text-align: center;
+      justify-content: center;
+      width: 30%;
+    }
+    #roxyPDF {
+      display: none;
+    }
+     */
+  </style>
+</head>
+<body>
+<div id="headerContainer"></div>
+<div id="navbarContainer"></div>
+<main>
+  <h1>CS 411 Lab 1 Personal Outlines</h1>
+  <!--
+  <table>
+    <tr> Place Buttons Here
+      <td><button onclick="hidingFunction()">Roxy (Click to Show)</button></td>
+    </tr>
+    <tr> Place Content Here
+      <td><object id="roxyPDF" data="./personal_labs/Lab%201%20Version%202%20(Draft)%20-%20Roxy%20Egger.pdf" type="application/pdf" width="30%" height="600px"></object></td>
+    </tr>
+  </table>
+  -->
+  <!-- To add your outline, just copy this and replace the link. The weird characters in the data section are for spaces, but your IDE should autogenerate the link for you. -->
+  <object id="roxyPDF2" data="./personal_labs/Lab%201%20Version%202%20(Draft)%20-%20Roxy%20Egger.pdf" type="application/pdf" width="30%" height="500px"></object>
+  <br /><br /><br />
+</main>
+
+<div id="footerContainer"></div>
+<script>
+  /*
+  function hidingFunction() { //Just copy and rename the elements to add buttons for more
+    var roxyPDF = document.getElementById("roxyPDF");
+    if (roxyPDF.style.display == "none")
+    {
+      roxyPDF.style.display = "block";
+    }
+    else
+    {
+        roxyPDF.style.display = "none";
+    }
+  }
+   */
+</script>
+</body>
+</html>
