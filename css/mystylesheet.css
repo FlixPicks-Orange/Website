@@ -1,10 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     /**overflow: -moz-scrollbars-vertical;  **/
     overflow-y: scroll;
-    background-color: #fff;
+    background-color: gray;
+    color: white;
 }
 
 
@@ -12,11 +13,10 @@ body {
 header {
     text-align: center;
     color: white;
-    background: rgb(200,54,0);
-    background: -moz-linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
-    background: linear-gradient(0deg, rgba(200,54,0,1) 0%, rgba(255,69,0,1) 35%, rgba(255,129,83,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c83600",endColorstr="#ff8153",GradientType=1);
+    background: rgb(41,41,41);
+    background: -moz-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
+    background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -66,7 +66,6 @@ nav>ul>li>a {
 }
 
 nav>ul>li>ul {
-    position: relative;
     display: none;
     position: absolute;
     background-color: #333;
@@ -80,7 +79,7 @@ nav>ul>li:hover>ul {
 
 nav>ul>li>ul>li {
     display: block;
-    margin: 0px;
+    margin: 0;
 }
 
 nav>ul>li>ul>li>a {
@@ -111,11 +110,7 @@ nav ul li a:visited {
 footer {
     text-align: center;
     color: white;
-    background: rgb(41,41,41);
-    background: -moz-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
-    background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 35%, rgba(128,128,128,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292929",endColorstr="#808080",GradientType=1);
+    background: rgb(43,47,49);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -164,7 +159,7 @@ main {
     min-height: calc(100vh - 209px);
     padding: 20px;
     margin: 0px;
-    background-color: #e6e6e6;
+    background-color: darkgray;
     vertical-align: top;
     float: left;
     text-align: left;
@@ -219,27 +214,26 @@ main {
 .TeamList .MemberName {
     font-weight: bold;
     font-size: 20px;
-    padding: 0px 10px;
-    padding-top: 5px;
+    color: white;
+    padding: 5px 10px 0px;
 }
 
 .TeamList .MemberTitle {
-    padding: 0px 10px;
-    padding-top: 5px;
-    color: #666666;
+    padding: 5px 10px 0px;
+    color: antiquewhite;
     font-weight: bold;
 }
 
 .TeamList .MemberBio {
     text-align: left;
-    padding: 0px 10px;
-    padding-top: 5px;
+    padding: 5px 10px 0px;
+    color: white;
 }
 
 .TeamList .MemberBio p {
     padding: 0px;
-    margin: 0px;
-    margin-bottom: 5px;
+    margin: 0px 0px 5px;
+    color: white;
 }
 
 
