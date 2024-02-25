@@ -4,7 +4,7 @@ body {
     padding: 0px;
     /**overflow: -moz-scrollbars-vertical;  **/
     overflow-y: scroll;
-    background-color: gray;
+    background-color: dimgray;
     color: white;
 }
 
@@ -276,5 +276,5 @@ ul.RefList li {
     margin-right: auto;
 }
 #heroimagecontainer img {
-    width: 75%;
+    width: 60%;
 }
